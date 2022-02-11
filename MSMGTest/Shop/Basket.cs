@@ -24,9 +24,16 @@ namespace Shop
             }
         }
 
-        public double TotalAmount()
+        public decimal TotalAmount()
         {
-            return Products.Sum(p => p.Price);
+            var total = Products.Sum(p => p.Price);
+
+            foreach (var offer in Offers)
+            {
+                total = total - offer.GetDiscount(Products);
+            }
+
+            return total;
         }
     }
 }

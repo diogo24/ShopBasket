@@ -3,3 +3,11 @@ Consider make Products in Basket to be an IEnumerable
 Review Add product functionality
 Abstract class for products? avoid repetition of code in each class
 Change products for properties in tests, to avoid repeat of inserting prices
+Remove const IDS
+Discount applied to total. Check if is better to apply discount individually to products
+Simplify get discount in OfferBread
+Offer implementations with to may const values.
+
+
+Dealing with money - don't use doubles
+https://exceptionnotfound.net/decimal-vs-double-and-other-tips-about-number-types-in-net/

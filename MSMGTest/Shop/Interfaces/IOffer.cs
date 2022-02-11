@@ -8,5 +8,6 @@ namespace Shop.Interfaces
 {
     public interface IOffer
     {
+        decimal GetDiscount(IEnumerable<IProduct> products);
     }
 }

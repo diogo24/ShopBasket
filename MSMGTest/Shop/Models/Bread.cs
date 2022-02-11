@@ -9,9 +9,12 @@ namespace Shop.Models
 {
     public class Bread : IProduct
     {
-        public double Price { get; private set; }
+        public const int ID = 1;
 
-        public Bread(double price)
+        public int Id => ID;
+        public decimal Price { get; private set; }
+
+        public Bread(decimal price)
         {
             Price = price;
         }
