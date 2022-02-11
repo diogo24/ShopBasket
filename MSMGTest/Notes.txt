@@ -1,0 +1,3 @@
+Moq IOffers instead of creating objects
+Consider make Products in Basket to be an IEnumerable
+Review Add product functionality
