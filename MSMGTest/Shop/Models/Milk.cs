@@ -9,5 +9,11 @@ namespace Shop.Models
 {
     public class Milk : IProduct
     {
+        public double Price { get; private set; }
+
+        public Milk(double price)
+        {
+            Price = price;
+        }
     }
 }

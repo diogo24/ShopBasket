@@ -8,13 +8,14 @@ namespace MSMGTest
 {
     public class ShopTests
     {
-
         public IEnumerable<IOffer> Offers { get; set; }
 
         [SetUp]
         public void Setup()
         {
             var offers = new List<IOffer>();
+
+            Offers = offers;
         }
 
         [Test]
@@ -24,9 +25,9 @@ namespace MSMGTest
             var basket = new Basket(Offers);
 
             // Act
-            basket.AddProduct(1, new Bread());
-            basket.AddProduct(1, new Butter());
-            basket.AddProduct(1, new Milk());
+            basket.AddProduct(1, new Bread(1.00));
+            basket.AddProduct(1, new Butter(0.80));
+            basket.AddProduct(1, new Milk(1.15));
 
             // Assert
             Assert.AreEqual(2.95, basket.TotalAmount());
@@ -39,8 +40,8 @@ namespace MSMGTest
             var basket = new Basket(Offers);
 
             // Act
-            basket.AddProduct(2, new Bread());
-            basket.AddProduct(2, new Butter());
+            basket.AddProduct(2, new Bread(1.00));
+            basket.AddProduct(2, new Butter(0.80));
 
             // Assert
             Assert.AreEqual(3.10, basket.TotalAmount());
@@ -53,7 +54,7 @@ namespace MSMGTest
             var basket = new Basket(Offers);
 
             // Act
-            basket.AddProduct(4, new Milk());
+            basket.AddProduct(4, new Milk(1.15));
 
             // Assert
             Assert.AreEqual(3.45, basket.TotalAmount());
@@ -66,9 +67,9 @@ namespace MSMGTest
             var basket = new Basket(Offers);
 
             // Act
-            basket.AddProduct(1, new Bread());
-            basket.AddProduct(2, new Butter());
-            basket.AddProduct(8, new Milk());
+            basket.AddProduct(1, new Bread(1.00));
+            basket.AddProduct(2, new Butter(0.80));
+            basket.AddProduct(8, new Milk(1.15));
 
             // Assert
             Assert.AreEqual(9.00, basket.TotalAmount());

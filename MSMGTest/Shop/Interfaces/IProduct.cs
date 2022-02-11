@@ -8,5 +8,6 @@ namespace Shop.Interfaces
 {
     public interface IProduct
     {
+        double Price { get; }
     }
 }

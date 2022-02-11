@@ -1,3 +1,5 @@
 Moq IOffers instead of creating objects
 Consider make Products in Basket to be an IEnumerable
 Review Add product functionality
+Abstract class for products? avoid repetition of code in each class
+Change products for properties in tests, to avoid repeat of inserting prices

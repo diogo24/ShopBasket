@@ -26,7 +26,7 @@ namespace Shop
 
         public double TotalAmount()
         {
-            throw new NotImplementedException();
+            return Products.Sum(p => p.Price);
         }
     }
 }
