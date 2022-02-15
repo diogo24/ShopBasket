@@ -9,14 +9,14 @@ Probably the easiest way to quickly export and share your code in this case is b
 git clone --bare ~/Dev/ruby/jekyll jekyll.git
 
 and then upload the folder to a server somewhere, share it for others to find on your machine, etc. Copying it down onto your machine and doing these commands will restore the repository:
-
+```
 $ mkdir test
 $ mv jekyll.git test/.git
 $ cd test
 $ git init
   Reinitialized existing Git repository in /Users/qrush/Dev/test/.git/
 $ git checkout -f
-
+```
 So we’ve created a new folder for the repo, changed the folder name back to .git, woke git back up and restored all the changes from the latest commit.
 "
 
