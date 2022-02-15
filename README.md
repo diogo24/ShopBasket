@@ -6,7 +6,9 @@ https://gitready.com/intermediate/2009/01/24/sharing-your-changes.html
 "
 Probably the easiest way to quickly export and share your code in this case is by making a bare clone of your repository, which contains only the stuff in the .git directory that’s usually at your project’s root folder. Since this one folder has all of the history stored in it, you can easily extract anything you need from it. Simply do:
 
+```
 git clone --bare ~/Dev/ruby/jekyll jekyll.git
+```
 
 and then upload the folder to a server somewhere, share it for others to find on your machine, etc. Copying it down onto your machine and doing these commands will restore the repository:
 ```
