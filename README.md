@@ -25,8 +25,8 @@ Notes:
 - TDD, C#, Git Repo, using Visual Studio 2022
 
 - Deliverables:
- * Source Code
- * Git Repo clone
+  - Source Code
+  - Git Repo clone
 
 - Problem:
  * Basket
