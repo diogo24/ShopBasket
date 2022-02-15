@@ -30,9 +30,9 @@ Notes:
 
 - Problem:
   * Basket
-    # Add
-    # Total
-    # Apply Discounts
+    + Add
+    + Total
+    + Apply Discounts
  
 - Products
   * Butter: £0.80
