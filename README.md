@@ -25,14 +25,14 @@ Notes:
 - TDD, C#, Git Repo, using Visual Studio 2022
 
 - Deliverables:
-  - Source Code
-  - Git Repo clone
+  * Source Code
+  * Git Repo clone
 
 - Problem:
- * Basket
-	# Add
-	# Total
-	# Apply Discounts
+  * Basket
+    # Add
+    # Total
+    # Apply Discounts
  
 - Products
   * Butter: £0.80
@@ -40,12 +40,12 @@ Notes:
   * Bread: £1.00
 
 - Offers:
- * 2 Butter - 1 Bread (-50%)
- * 3 Milk - 4th Milk free
+  * 2 Butter - 1 Bread (-50%)
+  * 3 Milk - 4th Milk free
 
 - Scenarios
- * Basket: [Bread: 1, Butter: 1, Milk: 1] - Total: £2.95
- * Basket: [Bread: 2, Butter: 2] - Total: £3.10
- * Basket: [Milk: 4] - Total: £3.45
- * Basket: [Bread: 1, Butter: 2, Milk: 8] - Total: £9.00
+  * Basket: [Bread: 1, Butter: 1, Milk: 1] - Total: £2.95
+  * Basket: [Bread: 2, Butter: 2] - Total: £3.10
+  * Basket: [Milk: 4] - Total: £3.45
+  * Basket: [Bread: 1, Butter: 2, Milk: 8] - Total: £9.00
   
